@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // Куда сохранять скомпилированные файлы
+    "rootDir": "./src", // Откуда компилировать файлы
+    "module": "NodeNext", // Поддержка ESM и CommonJS
+    "moduleResolution": "NodeNext",
+    "target": "ES2022", // Современный стандарт JS
+    "strict": true, // Включает строгий режим TypeScript
+    "esModuleInterop": true, // Упрощает импорт CommonJS модулей
+    "skipLibCheck": true, // Ускоряет компиляцию
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"], // Какие файлы включать в компиляцию
+  "exclude": ["node_modules", "dist"] // Исключаем ненужные файлы
+}

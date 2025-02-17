@@ -1,11 +1,15 @@
 # It is template for backend app
 
-## used:
+## consider
 
-## need to add:
+- adding auth
+- db initial setup
+
+## used:
 
 - fastify
 - swagger
-- env validation
 - zod validation
-- db initial setup
+- env validation
+
+## need to add:
