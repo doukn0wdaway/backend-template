@@ -1,7 +1,6 @@
-.env
-.env.production
-.env.development
 node_modules
 dist
 logs.txt
 
+.env*
+!.env.example

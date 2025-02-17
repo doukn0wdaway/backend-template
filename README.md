@@ -11,5 +11,6 @@
 - swagger
 - zod validation
 - env validation
+- better logging with pino
 
 ## need to add:
