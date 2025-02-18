@@ -6,9 +6,10 @@ import cors from './cors';
 import zod from './zod';
 import swagger from './swagger';
 import db from './db';
+import logger from './logger';
 
 export default fastifyPlugin(async (fastify: FastifyInstance) => {
-  await Promise.all([fastify.register(config)]);
+  await Promise.all([fastify.register(config), fastify.register(logger)]);
 
   await Promise.all([
     fastify.register(db),

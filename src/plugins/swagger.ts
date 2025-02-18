@@ -16,8 +16,8 @@ export default fastifyPlugin(async (fastify: FastifyInstance) => {
   await fastify.register(fastifySwagger, {
     openapi: {
       info: {
-        title: 'SampleApi',
-        description: 'Sample backend service',
+        title: 'Example Api',
+        description: 'Example backend service',
         version: '1.0.0',
       },
       servers: [],

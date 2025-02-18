@@ -53,6 +53,5 @@ export default fastifyPlugin(async (fastify: FastifyInstance) => {
 
   await fastify.register(fastifyEnv, configOptions);
 
-  // ✅ Add `isDev` flag inside `fastify.config`
   fastify.config.isDev = fastify.config.NODE_ENV === 'dev';
 });

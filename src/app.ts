@@ -27,11 +27,15 @@ export const build = async () => {
 
   const startPlugins = performance.now();
   await app.register(plugins);
-  app.log.info(`Plugins ${(performance.now() - startPlugins).toFixed(2)} ms`);
+  app.logger
+    .child('Plugins')
+    .info(`Loaded in ${(performance.now() - startPlugins).toFixed(2)} ms`);
 
   const startModules = performance.now();
   await app.register(routes, { prefix: '/api' });
-  app.log.info(`Modules ${(performance.now() - startModules).toFixed(2)} ms`);
+  app.logger
+    .child('Modules')
+    .info(`Loaded in ${(performance.now() - startModules).toFixed(2)} ms`);
 
   return app;
 };
